@@ -1,0 +1,371 @@
+/* Martel Sans */
+@font-face {
+  font-family: "Martel Sans Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/MartelSans-Light.ttf") format("opentype"),
+    url("/fonts/martelsans-light-webfont.woff") format("woff"),
+    url("/fonts/martelsans-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Martel Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/MartelSans-Regular.ttf") format("opentype"),
+    url("/fonts/martelsans-regular-webfont.woff") format("woff"),
+    url("/fonts/martelsans-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Martel Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/MartelSans-Bold.ttf") format("opentype"),
+    url("/fonts/martelsans-bold-webfont.woff") format("woff"),
+    url("/fonts/martelsans-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Martel Sans Extra Bold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/MartelSans-ExtraBold.ttf") format("opentype"),
+    url("/fonts/martelsans-extrabold-webfont.woff") format("woff"),
+    url("/fonts/martelsans-extrabold-webfont.woff2") format("woff2");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Poppins-Light.ttf") format("opentype"),
+    url("/fonts/poppins-light-webfont.woff") format("woff"),
+    url("/fonts/poppins-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Poppins-regular.ttf") format("opentype"),
+    url("/fonts/poppins-regular-webfont.woff") format("woff"),
+    url("/fonts/poppins-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins Semi Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Poppins-SemiBold.ttf") format("opentype"),
+    url("/fonts/poppins-semibold-webfont.woff") format("woff"),
+    url("/fonts/poppins-semibold-webfont.woff2") format("woff2");
+}
+
+/* Open Sans */
+@font-face {
+  font-family: "Open Sans Condensed Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/OpenSans_Condensed-Bold.ttf") format("opentype");
+}
+
+/* VARIABLES */
+:root {
+  --color-primary: #ffe145;
+  --color-primary-dark: #b79c10;
+  --color-primary-light: #fff7cc;
+
+  --color-dark: #3f4255;
+  --color-light: #d4d7e5;
+  --color-second-text: #9093a6;
+  --color-bg: #f2f4fa;
+  --color-white: #ffffff;
+  --color-body-bg: #e5e5e5;
+
+  --font-martel-sans-light: "Martel Sans Light", sans-serif;
+  --font-martel-sans-regular: "Martel Sans Regular", sans-serif;
+  --font-martel-sans-bold: "Martel Sans Bold", sans-serif;
+  --font-martel-sans-extra-bold: "Martel Sans Extra Bold", sans-serif;
+  --font-poppins-light: "Poppins Light", sans-serif;
+  --font-poppins-regular: "Poppins Regular", sans-serif;
+  --font-poppins-semibold: "Poppins Semi Bold", sans-serif;
+  --font-opensans-condensed-bold: "Open Sans Condensed Bold", sans-serif;
+}
+
+/* GENERAL RESET */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+* {
+  font: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: var(--color-dark);
+  background: var(--color-body-bg);
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+picture {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+/* LINKS */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* FORM */
+input,
+textarea,
+button,
+select {
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* Remove all animations, transitions etc. */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CUSTOM */
+
+/* LAYOUT */
+.container {
+  max-width: 125.6rem;
+  margin: 0 auto;
+}
+
+/* HEADERS & TEXT */
+.accent {
+  font-family: var(--font-poppins-light), sans-serif;
+  font-weight: 300;
+  font-size: 5.8rem;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+}
+
+.title-1 {
+  font-family: var(--font-poppins-light), sans-serif;
+  font-weight: 300;
+  font-size: 3.6rem;
+  line-height: 1.77;
+  letter-spacing: 0.08em;
+}
+
+.title-2 {
+  font-family: var(--font-poppins-semibold), sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.p {
+  font-family: var(--font-martel-sans-light), sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.p-small {
+  font-family: var(--font-martel-sans-regular), sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+/* BUTTONS */
+.btn-text {
+  font-family: var(--font-martel-sans-bold), sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.btn-text-small {
+  font-family: var(--font-martel-sans-extra-bold), sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary);
+  padding: 2.6rem 2.4rem;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--color-primary-light);
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary);
+}
+
+.btn-secondary {
+  color: var(--color-second-text);
+  background-color: var(--color-bg);
+  padding: 1.4rem 2.4rem;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.btn-round {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.08);
+
+  svg {
+    fill: var(--color-second-text);
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.btn-round:hover,
+.btn-round:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-round:active {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+  svg {
+    fill: var(--color-dark);
+  }
+}
+
+.btn-round.disabled,
+.btn-round:hover.disabled,
+.btn-round:focus.disabled,
+.btn-round:active.disabled {
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.08);
+  opacity: 0.4;
+
+  svg {
+    fill: var(--color-second-text);
+  }
+}
