@@ -1,3 +1,3 @@
-## 🚀 Stay tuned
+## 🚀 yellowkitchen landing page
 
-To be continued
+Preview 👉 https://anka1010.github.io/10-yellow-kitchen/
