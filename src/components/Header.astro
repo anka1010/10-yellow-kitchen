@@ -1,0 +1,28 @@
+---
+import Logo from "./Logo.astro";
+import Menu from "./Menu.astro";
+
+const menuOpen = false;
+---
+<div class='container'>
+    <header class="header">
+        <Logo />
+        <Menu />
+    </header>
+</div>
+
+<style>
+    .container {
+        border-bottom: 1px solid var(--color-light);
+    }
+
+    .header {
+        max-width: 125.6rem;
+        height: 7.2rem;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>

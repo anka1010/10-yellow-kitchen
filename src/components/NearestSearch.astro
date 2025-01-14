@@ -1,0 +1,55 @@
+---
+
+---
+<div class="container">
+    <section class="nearest">
+        <div class="text">
+            <h2 class="title-1">Your nearest restaurants</h2>
+            <p class="p">Each kitchen works with its own delivery area<br /> to deliver food to you as soon as possible</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter delivery address" class="p">
+            <button class="btn btn-text btn-primary">send</button>
+        </div>
+    </section>
+</div>
+
+<style>
+    .container {
+        background-color: var(--color-bg);
+        margin-top: 6.2rem;
+    }
+
+    .nearest {
+        width: min(109.6rem, 100vw - 8rem);
+        margin: 0 auto;
+        padding-top: 8rem;
+        padding-bottom: 8.1rem;
+        /* padding-inline: 4rem; */
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            h2 {
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        .form {
+            input {
+                color: var(--color-second-text);
+                background: center left 16px no-repeat url('/public/icons/ui/location.svg');
+                background-color: var(--color-white);
+                padding: 2.4rem 1.6rem;
+                padding-left: 4.8rem;
+                border-radius: 6px;
+
+                &::placeholder {
+                    color: inherit;
+                }
+            }
+        }
+    }
+</style>

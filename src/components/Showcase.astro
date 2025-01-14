@@ -1,0 +1,80 @@
+---
+---
+<section class="showcase">
+    <div class="left-column">
+        <h1 class="accent">Your Food court at home</h1>
+        <div class="buttons">
+
+            <a href="#!" class="btn-text">Delivery<br /><span class="p-small">Order in</span></a>
+            <a href="#!" class="btn-text">Take out<br /><span class="p-small">Grab and go</span></a>
+        </div>
+    </div>
+    <div class="right-column">
+        <img src="/public/images/showcase/plate.png" alt="Plate with food">
+        <img src="/public/images/showcase/rucola.png" alt="Rucola" class="img-secondary">
+        <div class="arrow-block">
+            <img src="/public/images/showcase/arrow.svg" alt="Arrow">
+            <p class="p">Fresh salad, Il Pasifigio</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .showcase {
+        max-width: 125.6rem;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        .left-column {
+            max-width: 53.6rem;
+            margin-top: 9.5rem;
+
+            .buttons {
+                margin-top: 8.8rem;
+
+                display: flex;
+                gap: 2.4rem;
+
+                a {
+                    text-align: center;
+                    color: inherit;
+                    padding: 1.85rem 2.4rem;
+                    border-radius: 4px;
+                    border: 2px solid var(--color-primary);
+                }
+            }
+        }
+        
+        .right-column {
+            max-width: 64.8rem;
+            position: relative;
+
+            .img-secondary {
+                position: absolute;
+                top: 40.2rem;
+                left: -13rem;
+            }
+
+            .arrow-block {
+                max-width: fit-content;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.43rem;
+
+                position: absolute;
+                right: 0;
+                bottom: -5.7rem;
+
+                img {
+                    width: 31px;
+                    height: 63px;
+                }
+            }
+        }
+    }
+</style>

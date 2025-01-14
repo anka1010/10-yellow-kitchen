@@ -1,0 +1,109 @@
+---
+import H2 from './H2.astro';
+import '../styles/slider.scss'
+---
+<section class="specialties">
+
+    <H2 title="Specialities"/>
+
+    <div class="slider">
+
+        <div class="slider-container">
+
+            <div class="slides">
+
+                <div class="slide">
+                    <img src="/public/icons/food/bagel.svg" alt="Bagel icon">
+                    <p class="p">Bagel</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/burger.svg" alt="Burger icon">
+                    <p class="p">Burger</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/chicken.svg" alt="Chicken icon">
+                    <p class="p">Chicken</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/fish.svg" alt="Fish icon">
+                    <p class="p">Fish</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/fishnchips.svg" alt="Fish'Chips icon">
+                    <p class="p">Fish'Chips</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/vegan.svg" alt="Salads icon">
+                    <p class="p">Salads</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/pizza.svg" alt="Pizza icon">
+                    <p class="p">Pizza</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/raviolli.svg" alt="Pasta icon">
+                    <p class="p">Pasta</p>
+                </div>
+                <div class="slide">
+                    <img src="/public/icons/food/bagel.svg" alt="Bagel icon">
+                    <p class="p">Bagel</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btn-round left">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                
+                <path id="Vector" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" />               
+            </svg>
+        </button>
+
+        <button class="btn-round right">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                
+                <path id="Vector" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" />               
+            </svg>
+        </button>
+
+    </div>
+
+</section>
+
+<style>
+    .specialties {
+        margin-top: 6.2rem;
+
+        .slider {
+            width: min(127.6rem, 100vw - 8rem);
+            margin: 0 auto;
+            margin-top: 4.8rem;
+
+            .slides {
+                padding: 1rem;
+                gap: 2.4rem;
+
+                .slide {
+                    width: 13.6rem;
+                    height: 13.6rem;
+                    background-color: var(--color-white);
+                    box-shadow: 0 2px 16px 0 rgba(60, 62, 74, 0.08);
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 4.8rem;
+                        height: 4.8rem;
+                        margin-bottom: 1.6rem;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+</style>

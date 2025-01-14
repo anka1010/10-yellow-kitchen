@@ -1,0 +1,175 @@
+---
+import Logo from "./Logo.astro"
+---
+<div class="container">
+    <footer class="footer">
+
+        <div class="top-row">
+            <div class="left-block">
+                <Logo type="dark" />
+                <div class="line"></div>
+                <div class="stores">
+                    <a href="#!"><img src="/images/ui/app-store.png" alt="App store logo"></a>
+                    <a href="#!"><img src="/images/ui/google-play.png" alt="Google play logo"></a>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="column">
+                    <div class="header title-2">
+                        About us
+                    </div>
+                    <ul class="items">
+                        <li><a href="#!" class="btn-text">Concept</a></li>
+                        <li><a href="#!" class="btn-text">Franchise</a></li>
+                        <li><a href="#!" class="btn-text">Business</a></li>
+                        <li><a href="#!" class="btn-text">Restaurant signup</a></li>
+                        <li><a href="#!" class="btn-text">For Investors</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <div class="header title-2">
+                        Get help
+                    </div>
+                    <ul class="items">
+                        <li><a href="#!" class="btn-text">Read FAQs</a></li>
+                        <li><a href="#!" class="btn-text">Restaurants</a></li>
+                        <li><a href="#!" class="btn-text">Specialities</a></li>
+                        <li><a href="#!" class="btn-text">Sign up to deliver</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="column last">
+                    <div class="header title-2">
+                        Contact us
+                    </div>
+                    <ul class="items">
+                        <li><p class="p">Yellow kitchen Paris 11</p></li>
+                        <li><p class="p">69 avenue de la Republique 75011 Paris</p></li>
+                        <li><a href="#!" class="btn-text">0800 111 126</a></li>
+                        <li><a href="#!" class="btn-text">contact@yellowkitchens.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="socials">
+                <a href="#!"><img src="/public/icons/ui/social-insta.svg" alt="Instagram logo"/></a>
+                <a href="#!"><img src="/public/icons/ui/social-twitter.svg" alt="Twitter logo"/></a>
+                <a href="#!"><img src="/public/icons/ui/social-fb.svg" alt="Facebook logo"/></a>
+            </div>
+            <div class="links">
+                <a href="#!" class="btn-text-small">Privacy Policy</a>
+                <a href="#!" class="btn-text-small">Terms</a>
+                <p class="p-small">© 2025 Yellow kitchen</a>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+<style>
+    .container {
+        background-color: var(--color-dark);
+    }
+
+    .footer {
+        color: var(--color-white);
+        max-width: 125.6rem;
+        height: 43.7rem;
+        margin: 0 auto;
+        padding-block: 4.8rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+
+            .left-block {
+                min-width: 29.6rem;
+                height: 14.9rem;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .stores {
+                    display: flex;
+                    gap: 0.8rem;
+                }
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--color-light);
+                }
+            }
+
+            .right-block {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                gap: 8.3rem;
+
+                .header {
+                    margin-bottom: 2.4rem;
+                }
+
+                .items {
+                    max-width: 29.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.6rem;
+
+                    a {
+                        color: var(--color-light);
+                    }
+
+                    p {
+                        color: var(--color-white);
+                    }
+                }
+
+                .last {
+                    margin-left: 7px;
+                }
+            }
+         }
+
+        .bottom-row {
+            margin-top: 9.6rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                color: inherit;
+            }
+            
+            .socials {
+                display: flex;
+                gap: 2.4rem;
+                align-items: center;
+            }
+
+            .links {
+                display: flex;
+                align-items: center;
+
+                a:not(:first-child) {
+                    margin-left: 6rem;
+                }
+
+                p {
+                    margin-left: 5.4rem;
+                }
+
+            }
+        }
+}
+
+</style>

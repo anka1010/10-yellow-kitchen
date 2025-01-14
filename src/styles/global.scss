@@ -124,7 +124,6 @@ body {
 
 body {
   color: var(--color-dark);
-  background: var(--color-body-bg);
 }
 
 aside,
@@ -234,7 +233,7 @@ legend {
 
 /* LAYOUT */
 .container {
-  max-width: 125.6rem;
+  width: min(144rem, 100vw - 8rem);
   margin: 0 auto;
 }
 

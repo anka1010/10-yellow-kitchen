@@ -1,0 +1,101 @@
+---
+import H2 from "./H2.astro";
+
+import '../styles/slider.scss';
+---
+<section class="restaurants">
+
+    <H2 title="Restaurants"/>
+    
+    <div class="slider">
+
+        <div class="slider-container">
+            <div class="slides">
+
+                <div class="slide">
+                    <img src="/public/images/restaurants/preview-burger-d-lice.jpg" alt="Burger D'Lice photo" class="rest-image" >
+                    <div class="rest-logo">
+                        <img src="public/images/restaurants/logo-burger-d-lice.svg" alt="Burger D'Lice logo" >
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/public/images/restaurants/preview-pastifigio.jpg" alt="Il Pastifigio photo" class="rest-image" >
+                    <div class="rest-logo">
+                        <img src="public/images/restaurants/logo-pastifigio.svg" alt="Il Pastifigio logo" >
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/public/images/restaurants/preview-believe.jpg" alt="Believe photo" class="rest-image" >
+                    <div class="rest-logo">
+                        <img src="public/images/restaurants/logo-believe.svg" alt="Believe logo" >
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/public/images/restaurants/preview-bo.jpg" alt="Bo photo" class="rest-image" >
+                    <div class="rest-logo">
+                        <img src="public/images/restaurants/logo-bo.svg" alt="Bo logo" >
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/public/images/restaurants/preview-burger-d-lice.jpg" alt="Burger D'Lice photo" class="rest-image" >
+                    <div class="rest-logo">
+                        <img src="public/images/restaurants/logo-burger-d-lice.svg" alt="Burger D'Lice logo" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-round left">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                
+                <path id="Vector" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" />               
+            </svg>
+        </button>
+        <button class="btn-round right">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                
+                <path id="Vector" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" />               
+            </svg>
+        </button>
+        
+    </div>
+</section>
+
+<style>
+    .restaurants {
+        margin-top: 4.8rem;
+        
+        .slider {
+            width: min(127.6rem, 100vw - 8rem);
+            margin: 0 auto;
+            margin-top: 4.8rem;
+
+                .slides {
+                    padding: 1rem;
+                    gap: 2.4rem;
+
+                    .slide {
+                        width: 29.6rem;
+                        box-shadow: 0 2px 16px 0 rgba(60, 62, 74, 0.08);
+                        border-radius: 4px;
+                        overflow: hidden;
+
+                        .rest-image {
+                            height: 18.4rem;
+                            object-fit: cover;
+                        }
+
+                        .rest-logo {
+                            height: 11.2rem;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+        }
+    } 
+</style>

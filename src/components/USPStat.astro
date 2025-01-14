@@ -1,0 +1,73 @@
+---
+
+---
+<div class="container">
+    <section class="usp-stat">
+        <div class="stat">
+            <div class="stat-item">
+                <div class="number">1</div>
+                <div class="text title-2">kitchen</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">11</div>
+                <div class="text title-2">specialties</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">11</div>
+                <div class="text title-2">restaurants</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">1</div>
+                <div class="text title-2">transport costs</div>
+            </div>
+        </div>
+    </section>
+</div>
+    
+<style>
+    .container {
+        margin-top: 6.2rem;
+
+    }
+
+    .usp-stat {
+        height:30.4rem; 
+        background: center / cover no-repeat url('/public/images/ui/usp-bg.png');
+        box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
+        margin-block: 1rem;
+        padding-top: 5.6rem;
+
+        display: flex;
+        justify-content: center;
+
+        .stat {
+            display: flex;
+            gap: 2.5rem;
+
+            .stat-item {
+                width: 18.6rem;
+
+                .number {
+                    font-family: var(--font-opensans-condensed-bold);
+                    font-weight: 700;
+                    font-size: 5.8rem;
+                    line-height: 110%;
+                    letter-spacing: 0.05em;
+                    background: center top no-repeat url('/public/icons/ui/ellipse-border.svg'),
+                                center bottom no-repeat url('/public/icons/ui/ellipse.svg');
+                    height: 14.9rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                .text {
+                    text-align: center;
+                    margin-top: 2px;
+                }
+            }
+
+        }
+    }
+</style>

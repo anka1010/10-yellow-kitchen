@@ -1,14 +1,27 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Showcase from '../components/Showcase.astro';
+import USP from '../components/USP.astro';
+import Restaurants from "../components/Restaurants.astro";
+import NearestSearch from '../components/NearestSearch.astro';
+import Specialties from '../components/Specialties.astro';
+import USPStat from "../components/USPStat.astro";
+import Map from '../components/Map.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<div class="container">
-		<button class="btn-round disabled" >
-			<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path id="Vector" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" />
-			</svg>
-		</button>		
-	</div>
+	<Header />
+	<Showcase />
+	<USP />
+	<Restaurants />
+	<NearestSearch />
+	<Specialties />
+	<USPStat />
+	<Map />
+	<InstagramFeed />
+	<Footer />
 </Layout>
 
