@@ -3,9 +3,10 @@ import {Image} from 'astro:assets';
 import logo from "../assets/images/logo/logo.svg";
 import logoDark from "../assets/images/logo/logo-dark.svg";
 
+const GENPATH = import.meta.env.BASE_URL + "/";
 const {type = 'light'} = Astro.props;
 ---
-<a href="/" class='logo' >
+<a href={GENPATH} class='logo' >
     {type === 'light' && <Image src={logo} alt="Logo" />}
     {type === 'dark' && <Image src={logoDark} alt="Logo">}
 </a> 
