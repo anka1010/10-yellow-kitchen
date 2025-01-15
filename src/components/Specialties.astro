@@ -1,5 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import H2 from './H2.astro';
+
+import bagel from "../assets/icons/food/bagel.svg";
+import burger from "../assets/icons/food/burger.svg";
+import chicken from "../assets/icons/food/chicken.svg";
+import fish from "../assets/icons/food/fish.svg";
+import fishnchips from "../assets/icons/food/fishnchips.svg";
+import vegan from "../assets/icons/food/vegan.svg";
+import pizza from "../assets/icons/food/pizza.svg";
+import raviolli from "../assets/icons/food/raviolli.svg";
+
 import '../styles/slider.scss'
 ---
 <section class="specialties">
@@ -13,39 +24,39 @@ import '../styles/slider.scss'
             <div class="slides">
 
                 <div class="slide">
-                    <img src="/public/icons/food/bagel.svg" alt="Bagel icon">
+                    <Image src={bagel} alt="Bagel icon" />
                     <p class="p">Bagel</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/burger.svg" alt="Burger icon">
+                    <Image src={burger} alt="Burger icon" />
                     <p class="p">Burger</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/chicken.svg" alt="Chicken icon">
+                    <Image src={chicken} alt="Chicken icon" />
                     <p class="p">Chicken</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/fish.svg" alt="Fish icon">
+                    <Image src={fish} alt="Fish icon" />
                     <p class="p">Fish</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/fishnchips.svg" alt="Fish'Chips icon">
+                    <Image src={fishnchips} alt="Fish'Chips icon" />
                     <p class="p">Fish'Chips</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/vegan.svg" alt="Salads icon">
+                    <Image src={vegan} alt="Salads icon" />
                     <p class="p">Salads</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/pizza.svg" alt="Pizza icon">
+                    <Image src={pizza} alt="Pizza icon" />
                     <p class="p">Pizza</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/raviolli.svg" alt="Pasta icon">
+                    <Image src={raviolli} alt="Pasta icon" />
                     <p class="p">Pasta</p>
                 </div>
                 <div class="slide">
-                    <img src="/public/icons/food/bagel.svg" alt="Bagel icon">
+                    <Image src={bagel} alt="Bagel icon" />
                     <p class="p">Bagel</p>
                 </div>
 

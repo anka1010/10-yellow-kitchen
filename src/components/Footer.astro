@@ -1,5 +1,12 @@
 ---
-import Logo from "./Logo.astro"
+import { Image } from "astro:assets";
+import Logo from "./Logo.astro";
+
+import appStoreLogo from "../assets/images/ui/app-store.png";
+import googlePlayLogo from "../assets/images/ui/google-play.png";
+import instaLogo from "../assets/icons/ui/social-insta.svg";
+import twitterLogo from "../assets/icons/ui/social-twitter.svg";
+import fbLogo from "../assets/icons/ui/social-fb.svg";
 ---
 <div class="container">
     <footer class="footer">
@@ -9,8 +16,8 @@ import Logo from "./Logo.astro"
                 <Logo type="dark" />
                 <div class="line"></div>
                 <div class="stores">
-                    <a href="#!"><img src="/images/ui/app-store.png" alt="App store logo"></a>
-                    <a href="#!"><img src="/images/ui/google-play.png" alt="Google play logo"></a>
+                    <a href="#!"><Image src={appStoreLogo} alt="App store logo" /></a>
+                    <a href="#!"><Image src={googlePlayLogo} alt="Google play logo" /></a>
                 </div>
             </div>
             <div class="right-block">
@@ -54,9 +61,9 @@ import Logo from "./Logo.astro"
 
         <div class="bottom-row">
             <div class="socials">
-                <a href="#!"><img src="/public/icons/ui/social-insta.svg" alt="Instagram logo"/></a>
-                <a href="#!"><img src="/public/icons/ui/social-twitter.svg" alt="Twitter logo"/></a>
-                <a href="#!"><img src="/public/icons/ui/social-fb.svg" alt="Facebook logo"/></a>
+                <a href="#!"><Image src={instaLogo} alt="Instagram logo" /></a>
+                <a href="#!"><Image src={twitterLogo} alt="Twitter logo" /></a>
+                <a href="#!"><Image src={fbLogo} alt="Facebook logo" /></a>
             </div>
             <div class="links">
                 <a href="#!" class="btn-text-small">Privacy Policy</a>

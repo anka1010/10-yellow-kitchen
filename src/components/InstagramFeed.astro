@@ -1,20 +1,25 @@
 ---
+import { Image } from "astro:assets";
 
+import imgInsta1 from "../assets/images/instagram/insta-1.png";
+import imgInsta2 from "../assets/images/instagram/insta-2.png";
+import imgInsta3 from "../assets/images/instagram/insta-3.png";
+import imgInsta4 from "../assets/images/instagram/insta-4.png";
 ---
 <section class="insta-feed">
     <h2 class="title-1">#YellowKitchens <span>on instagram</span></h2>
     <div class="feed">
         <div class="photo">
-            <img src="/public/images/instagram/insta-1.png" alt="Insta post photo">
+            <Image src={imgInsta1} alt="Insta post photo" />
         </div>
         <div class="photo">
-            <img src="/public/images/instagram/insta-2.png" alt="Insta post photo">
+            <Image src={imgInsta2} alt="Insta post photo" />
         </div>
         <div class="photo">
-            <img src="/public/images/instagram/insta-3.png" alt="Insta post photo">
+            <Image src={imgInsta3} alt="Insta post photo" />
         </div>
         <div class="photo">
-            <img src="/public/images/instagram/insta-4.png" alt="Insta post photo">
+            <Image src={imgInsta4} alt="Insta post photo" />
         </div>
     </div>
 </section>

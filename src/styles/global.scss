@@ -3,36 +3,36 @@
   font-family: "Martel Sans Light";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/MartelSans-Light.ttf") format("opentype"),
-    url("/fonts/martelsans-light-webfont.woff") format("woff"),
-    url("/fonts/martelsans-light-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/MartelSans-Light.ttf") format("opentype"),
+    url("../assets/fonts/martelsans-light-webfont.woff") format("woff"),
+    url("../assets/fonts/martelsans-light-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Martel Sans Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/MartelSans-Regular.ttf") format("opentype"),
-    url("/fonts/martelsans-regular-webfont.woff") format("woff"),
-    url("/fonts/martelsans-regular-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/MartelSans-Regular.ttf") format("opentype"),
+    url("../assets/fonts/martelsans-regular-webfont.woff") format("woff"),
+    url("../assets/fonts/martelsans-regular-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Martel Sans Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/MartelSans-Bold.ttf") format("opentype"),
-    url("/fonts/martelsans-bold-webfont.woff") format("woff"),
-    url("/fonts/martelsans-bold-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/MartelSans-Bold.ttf") format("opentype"),
+    url("../assets/fonts/martelsans-bold-webfont.woff") format("woff"),
+    url("../assets/fonts/martelsans-bold-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Martel Sans Extra Bold";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/MartelSans-ExtraBold.ttf") format("opentype"),
-    url("/fonts/martelsans-extrabold-webfont.woff") format("woff"),
-    url("/fonts/martelsans-extrabold-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/MartelSans-ExtraBold.ttf") format("opentype"),
+    url("../assets/fonts/martelsans-extrabold-webfont.woff") format("woff"),
+    url("../assets/fonts/martelsans-extrabold-webfont.woff2") format("woff2");
 }
 
 /* Poppins */
@@ -40,27 +40,27 @@
   font-family: "Poppins Light";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/Poppins-Light.ttf") format("opentype"),
-    url("/fonts/poppins-light-webfont.woff") format("woff"),
-    url("/fonts/poppins-light-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/Poppins-Light.ttf") format("opentype"),
+    url("../assets/fonts/poppins-light-webfont.woff") format("woff"),
+    url("../assets/fonts/poppins-light-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Poppins Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Poppins-regular.ttf") format("opentype"),
-    url("/fonts/poppins-regular-webfont.woff") format("woff"),
-    url("/fonts/poppins-regular-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/Poppins-regular.ttf") format("opentype"),
+    url("../assets/fonts/poppins-regular-webfont.woff") format("woff"),
+    url("../assets/fonts/poppins-regular-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Poppins Semi Bold";
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/Poppins-SemiBold.ttf") format("opentype"),
-    url("/fonts/poppins-semibold-webfont.woff") format("woff"),
-    url("/fonts/poppins-semibold-webfont.woff2") format("woff2");
+  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("opentype"),
+    url("../assets/fonts/poppins-semibold-webfont.woff") format("woff"),
+    url("../assets/fonts/poppins-semibold-webfont.woff2") format("woff2");
 }
 
 /* Open Sans */
@@ -68,7 +68,7 @@
   font-family: "Open Sans Condensed Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/OpenSans_Condensed-Bold.ttf") format("opentype");
+  src: url("../assets/fonts/OpenSans_Condensed-Bold.ttf") format("opentype");
 }
 
 /* VARIABLES */

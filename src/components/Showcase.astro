@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+import plate from"../assets/images/showcase/plate.png";
+import rucola from"../assets/images/showcase/rucola.png";
+import arrow from"../assets/images/showcase/arrow.svg";
 ---
 <section class="showcase">
     <div class="left-column">
@@ -10,10 +14,10 @@
         </div>
     </div>
     <div class="right-column">
-        <img src="/public/images/showcase/plate.png" alt="Plate with food">
-        <img src="/public/images/showcase/rucola.png" alt="Rucola" class="img-secondary">
+        <Image src={plate} alt="Plate with food" />
+        <Image src={rucola} alt="Rucola" class="img-secondary" />
         <div class="arrow-block">
-            <img src="/public/images/showcase/arrow.svg" alt="Arrow">
+            <Image src={arrow} alt="Arrow" />
             <p class="p">Fresh salad, Il Pasifigio</p>
         </div>
     </div>
@@ -51,11 +55,12 @@
         .right-column {
             max-width: 64.8rem;
             position: relative;
-
+            
             .img-secondary {
+                width: min(19.7rem, 40%);
                 position: absolute;
-                top: 40.2rem;
-                left: -13rem;
+                bottom: 9.26%;
+                left: -28.06%;
             }
 
             .arrow-block {

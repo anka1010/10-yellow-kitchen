@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
 
+import map from "../assets/images/Map.png";
 ---
 <section class="map">
-    <img src="/public/images/Map.png" alt="Map">
+    <Image src={map} alt="Map">
 </section>
 
 <style>

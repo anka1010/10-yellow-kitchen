@@ -1,5 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import H2 from "./H2.astro";
+
+import burgerImg from "../assets/images/restaurants/preview-burger-d-lice.jpg";
+import burgerLogo from "../assets/images/restaurants/logo-burger-d-lice.svg";
+import pastifigioImg from "../assets/images/restaurants/preview-pastifigio.jpg";
+import pastifigioLogo from "../assets/images/restaurants/logo-pastifigio.svg";
+import believeImg from "../assets/images/restaurants/preview-believe.jpg";
+import believeLogo from "../assets/images/restaurants/logo-believe.svg";
+import boImg from "../assets/images/restaurants/preview-bo.jpg";
+import boLogo from "../assets/images/restaurants/logo-bo.svg";
 
 import '../styles/slider.scss';
 ---
@@ -13,37 +23,37 @@ import '../styles/slider.scss';
             <div class="slides">
 
                 <div class="slide">
-                    <img src="/public/images/restaurants/preview-burger-d-lice.jpg" alt="Burger D'Lice photo" class="rest-image" >
+                    <Image src={burgerImg} alt="Burger D'Lice photo" class="rest-image" />
                     <div class="rest-logo">
-                        <img src="public/images/restaurants/logo-burger-d-lice.svg" alt="Burger D'Lice logo" >
+                        <Image src={burgerLogo} alt="Burger D'Lice logo" />
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="/public/images/restaurants/preview-pastifigio.jpg" alt="Il Pastifigio photo" class="rest-image" >
+                    <Image src={pastifigioImg} alt="Il Pastifigio photo" class="rest-image" />
                     <div class="rest-logo">
-                        <img src="public/images/restaurants/logo-pastifigio.svg" alt="Il Pastifigio logo" >
+                        <Image src={pastifigioLogo} alt="Il Pastifigio logo" />
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="/public/images/restaurants/preview-believe.jpg" alt="Believe photo" class="rest-image" >
+                    <Image src={believeImg} alt="Believe photo" class="rest-image" />
                     <div class="rest-logo">
-                        <img src="public/images/restaurants/logo-believe.svg" alt="Believe logo" >
+                        <Image src={believeLogo} alt="Believe logo" />
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="/public/images/restaurants/preview-bo.jpg" alt="Bo photo" class="rest-image" >
+                    <Image src={boImg} alt="Bo photo" class="rest-image" />
                     <div class="rest-logo">
-                        <img src="public/images/restaurants/logo-bo.svg" alt="Bo logo" >
+                        <Image src={boLogo} alt="Bo logo" />
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="/public/images/restaurants/preview-burger-d-lice.jpg" alt="Burger D'Lice photo" class="rest-image" >
+                    <Image src={burgerImg} alt="Burger D'Lice photo" class="rest-image" />
                     <div class="rest-logo">
-                        <img src="public/images/restaurants/logo-burger-d-lice.svg" alt="Burger D'Lice logo" >
+                        <Image src={burgerLogo} alt="Burger D'Lice logo" />
                     </div>
                 </div>
             </div>
